@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="48dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="46dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toStartOf="@+id/salAmount"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/income_trx" />
+
+        <TextView
+            android:id="@+id/sal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            tools:text="Salary"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+        <TextView
+            android:id="@+id/salAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            tools:text="KES 4000"
+            app:layout_constraintEnd_toEndOf="@+id/sal"
+            app:layout_constraintStart_toStartOf="@+id/sal"
+            app:layout_constraintTop_toBottomOf="@+id/sal" />
+
+        <TextView
+            android:id="@+id/salDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="141dp"
+            android:layout_marginEnd="55dp"
+            tools:text="1 JULY 2024"
+            app:layout_constraintBottom_toBottomOf="@+id/salAmount"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/salAmount"
+            app:layout_constraintTop_toTopOf="@+id/sal" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="29dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="52dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            app:srcCompat="@drawable/expense_trx" />
+
+        <TextView
+            android:id="@+id/rent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            tools:text="Rent"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+            app:layout_constraintEnd_toEndOf="@+id/salAmount"
+            app:layout_constraintStart_toStartOf="@+id/sal"
+            app:layout_constraintTop_toBottomOf="@+id/salAmount" />
+
+        <TextView
+            android:id="@+id/rentAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            tools:text="KES 16000"
+            app:layout_constraintEnd_toEndOf="@+id/salAmount"
+            app:layout_constraintStart_toStartOf="@+id/salAmount"
+            app:layout_constraintTop_toBottomOf="@+id/rent" />
+
+        <TextView
+            android:id="@+id/rentDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="82dp"
+            tools:text="2 july 2024"
+            app:layout_constraintBottom_toBottomOf="@+id/rentAmount"
+            app:layout_constraintEnd_toEndOf="@+id/salDate"
+            app:layout_constraintStart_toStartOf="@+id/salDate"
+            app:layout_constraintTop_toBottomOf="@+id/salDate" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="34dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="52dp"
+            app:layout_constraintStart_toStartOf="@+id/imageView6"
+            app:layout_constraintTop_toBottomOf="@+id/imageView6"
+            app:srcCompat="@drawable/income_trx" />
+
+        <TextView
+            android:id="@+id/div"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            tools:text="Dividends"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+            app:layout_constraintEnd_toEndOf="@+id/rentAmount"
+            app:layout_constraintStart_toStartOf="@+id/rentAmount"
+            app:layout_constraintTop_toBottomOf="@+id/rentAmount" />
+
+        <TextView
+            android:id="@+id/divAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="32dp"
+            tools:text="KES 2400"
+            app:layout_constraintBottom_toTopOf="@+id/electric"
+            app:layout_constraintEnd_toEndOf="@+id/div"
+            app:layout_constraintStart_toStartOf="@+id/div"
+            app:layout_constraintTop_toBottomOf="@+id/div" />
+
+        <TextView
+            android:id="@+id/divDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52dp"
+            tools:text="4 july 2024"
+            app:layout_constraintBottom_toBottomOf="@+id/divAmount"
+            app:layout_constraintEnd_toEndOf="@+id/rentDate"
+            app:layout_constraintStart_toStartOf="@+id/rentDate"
+            app:layout_constraintTop_toBottomOf="@+id/rentDate" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="31dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="52dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView7"
+            app:layout_constraintStart_toStartOf="@+id/imageView7"
+            app:layout_constraintTop_toBottomOf="@+id/imageView7"
+            app:srcCompat="@drawable/expense_trx" />
+
+        <TextView
+            android:id="@+id/electric"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            tools:text="Electricity"
+            app:layout_constraintStart_toStartOf="@+id/divAmount"
+            app:layout_constraintTop_toBottomOf="@+id/divAmount" />
+
+        <TextView
+            android:id="@+id/electricAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            tools:text="KES 800"
+            app:layout_constraintEnd_toEndOf="@+id/electric"
+            app:layout_constraintStart_toStartOf="@+id/electric"
+            app:layout_constraintTop_toBottomOf="@+id/electric" />
+
+        <TextView
+            android:id="@+id/electricDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="62dp"
+            tools:text="5 july 2024"
+            app:layout_constraintEnd_toEndOf="@+id/divDate"
+            app:layout_constraintStart_toStartOf="@+id/divDate"
+            app:layout_constraintTop_toBottomOf="@+id/divDate" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="29dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="56dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView8"
+            app:layout_constraintHorizontal_bias="0.428"
+            app:layout_constraintStart_toStartOf="@+id/imageView8"
+            app:layout_constraintTop_toBottomOf="@+id/imageView8"
+            app:srcCompat="@drawable/expenses_trx" />
+
+        <TextView
+            android:id="@+id/internet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            tools:text="Internet"
+            app:layout_constraintEnd_toEndOf="@+id/electricAmount"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/electric"
+            app:layout_constraintTop_toBottomOf="@+id/electricAmount" />
+
+        <TextView
+            android:id="@+id/intAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            tools:text="KES 2500"
+            app:layout_constraintEnd_toEndOf="@+id/internet"
+            app:layout_constraintStart_toStartOf="@+id/internet"
+            app:layout_constraintTop_toBottomOf="@+id/internet" />
+
+        <TextView
+            android:id="@+id/intDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="68dp"
+            android:layout_marginBottom="63dp"
+            tools:text="5 july 2024"
+            app:layout_constraintBottom_toTopOf="@+id/shopDate"
+            app:layout_constraintEnd_toEndOf="@+id/electricDate"
+            app:layout_constraintStart_toStartOf="@+id/electricDate"
+            app:layout_constraintTop_toBottomOf="@+id/electricDate" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="32dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="64dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView9"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="@+id/imageView9"
+            app:layout_constraintTop_toBottomOf="@+id/imageView9"
+            app:srcCompat="@drawable/expense_trx" />
+
+        <TextView
+            android:id="@+id/shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="9dp"
+            tools:text="Shopping"
+            app:layout_constraintBottom_toTopOf="@+id/shopAmount"
+            app:layout_constraintEnd_toEndOf="@+id/intAmount"
+            app:layout_constraintStart_toStartOf="@+id/intAmount"
+            app:layout_constraintTop_toBottomOf="@+id/intAmount" />
+
+        <TextView
+            android:id="@+id/shopAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="42dp"
+            tools:text="KES 3500"
+            app:layout_constraintBottom_toTopOf="@+id/bus"
+            app:layout_constraintEnd_toEndOf="@+id/shop"
+            app:layout_constraintStart_toStartOf="@+id/shop"
+            app:layout_constraintTop_toBottomOf="@+id/shop" />
+
+        <TextView
+            android:id="@+id/shopDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="62dp"
+            tools:text="5 july 2024"
+            app:layout_constraintEnd_toEndOf="@+id/intDate"
+            app:layout_constraintStart_toStartOf="@+id/intDate"
+            app:layout_constraintTop_toBottomOf="@+id/intDate" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="35dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="62dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView10"
+            app:layout_constraintStart_toStartOf="@+id/imageView10"
+            app:layout_constraintTop_toBottomOf="@+id/imageView10"
+            app:srcCompat="@drawable/expense_trx" />
+
+        <TextView
+            android:id="@+id/bus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="42dp"
+            tools:text="Bus fare"
+            app:layout_constraintStart_toStartOf="@+id/shopAmount"
+            app:layout_constraintTop_toBottomOf="@+id/shopAmount" />
+
+        <TextView
+            android:id="@+id/busAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            tools:text="KES 500"
+            app:layout_constraintEnd_toEndOf="@+id/bus"
+            app:layout_constraintStart_toStartOf="@+id/bus"
+            app:layout_constraintTop_toBottomOf="@+id/bus" />
+
+        <TextView
+            android:id="@+id/busDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="62dp"
+            tools:text="11 july 2024"
+            app:layout_constraintEnd_toEndOf="@+id/shopDate"
+            app:layout_constraintStart_toStartOf="@+id/shopDate"
+            app:layout_constraintTop_toBottomOf="@+id/shopDate" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
